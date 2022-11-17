@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        width:100%;
+    }
+    .navbar{
+        width:250px;
+    }
+    .navbar ul {
+        list-style: none;
+    }
+    .navbar ul li {
+        background: #eee;
+        width: 100%;
+    }
+    .navbar ul li a {
+        position: relative;
+        display: block;
+        font-family: sans-serif;
+        font-size: 1.2em;
+        text-decoration: none;
+        height:50px;
+        text-transform:uppercase;
+        color:#000;
+        box-sizing: border-box;
+        padding-left:20px;
+        line-height: 50px;
+        z-index: 1;
+
+    }
+    .navbar ul li:nth-child(1) a {
+        border-left:10px solid red;
+    }
+    
+    .navbar ul li:nth-child(2) a {
+        border-left:10px solid blue;
+    }
+    
+    .navbar ul li:nth-child(3) a {
+        border-left:10px solid green;
+    }
+    
+    .navbar ul li:nth-child(4) a {
+        border-left:10px solid orange;
+    }
+    
+    .navbar ul li:nth-child(5) a {
+        border-left:10px solid brown;
+    }
+
+    .navbar ul li a:after{
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width: 0;
+        transition: all 0.5s;
+        z-index: -1;
+    }
+
+
+    .navbar ul li a:hover:after{
+            width: 100%;
+    }
+
+
+    .navbar ul li:nth-child(1) a:after {
+        background-color:  red;
+    }
+    
+    .navbar ul li:nth-child(2) a:after {
+        background-color:  blue;
+    }
+    
+    .navbar ul li:nth-child(3)  a:after {
+        background-color:  green;
+    }
+    
+    .navbar ul li:nth-child(4)  a:after {
+        background-color:  orange;
+    }
+    
+    .navbar ul li:nth-child(5)  a:after {
+        background-color:  brown;
+    }
+    
+</style>
+
+</head>
+<body>
+    <div class="navbar">
+<ul>
+    <li><a href="">home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">services</a></li>
+    <li><a href="">portfolio</a></li>
+    <li><a href="">Contact</a></li>
+</ul>
+    </div>
+</body>
+</html>
